@@ -1,0 +1,39 @@
+[30-Jan-2019 11:09:48 UTC] PHP Warning:  include(../header.php): failed to open stream: No such file or directory in /home/me11admin/public_html/admin/razorpay/pay.php on line 2
+[30-Jan-2019 11:09:48 UTC] PHP Warning:  include(): Failed opening '../header.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/me11admin/public_html/admin/razorpay/pay.php on line 2
+[30-Jan-2019 11:09:48 UTC] PHP Warning:  include(../container.php): failed to open stream: No such file or directory in /home/me11admin/public_html/admin/razorpay/pay.php on line 5
+[30-Jan-2019 11:09:48 UTC] PHP Warning:  include(): Failed opening '../container.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/me11admin/public_html/admin/razorpay/pay.php on line 5
+[30-Jan-2019 11:09:48 UTC] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/me11admin/public_html/admin/razorpay/pay.php:5) in /home/me11admin/public_html/admin/razorpay/pay.php on line 13
+[30-Jan-2019 11:09:48 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/me11admin/public_html/admin/razorpay/pay.php:5) in /home/me11admin/public_html/admin/razorpay/pay.php on line 13
+[30-Jan-2019 11:09:49 UTC] PHP Fatal error:  Uncaught exception 'Razorpay\Api\Errors\BadRequestError' with message 'The api key provided is invalid' in /home/me11admin/public_html/admin/razorpay/razorpay-php/src/Request.php:123
+Stack trace:
+#0 /home/me11admin/public_html/admin/razorpay/razorpay-php/src/Request.php(90): Razorpay\Api\Request->processError(Array, 401, Object(Requests_Response))
+#1 /home/me11admin/public_html/admin/razorpay/razorpay-php/src/Request.php(44): Razorpay\Api\Request->checkErrors(Object(Requests_Response))
+#2 /home/me11admin/public_html/admin/razorpay/razorpay-php/src/Entity.php(59): Razorpay\Api\Request->request('POST', 'orders/', Array)
+#3 /home/me11admin/public_html/admin/razorpay/razorpay-php/src/Entity.php(15): Razorpay\Api\Entity->request('POST', 'orders/', Array)
+#4 /home/me11admin/public_html/admin/razorpay/razorpay-php/src/Order.php(12): Razorpay\Api\Entity->create(Array)
+#5 /home/me11admin/public_html/admin/razorpay/pay.php(22): Razorpay\Api\Order->create(Array)
+#6 {main}
+  thrown in /home/me11admin/public_html/admin/razorpay/razorpay-php/src/Request.php on line 123
+[30-Jan-2019 11:10:38 UTC] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/me11admin/public_html/admin/razorpay/pay.php:2) in /home/me11admin/public_html/admin/razorpay/pay.php on line 5
+[30-Jan-2019 11:10:38 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/me11admin/public_html/admin/razorpay/pay.php:2) in /home/me11admin/public_html/admin/razorpay/pay.php on line 5
+[30-Jan-2019 11:10:38 UTC] PHP Fatal error:  Uncaught exception 'Razorpay\Api\Errors\BadRequestError' with message 'The api key provided is invalid' in /home/me11admin/public_html/admin/razorpay/razorpay-php/src/Request.php:123
+Stack trace:
+#0 /home/me11admin/public_html/admin/razorpay/razorpay-php/src/Request.php(90): Razorpay\Api\Request->processError(Array, 401, Object(Requests_Response))
+#1 /home/me11admin/public_html/admin/razorpay/razorpay-php/src/Request.php(44): Razorpay\Api\Request->checkErrors(Object(Requests_Response))
+#2 /home/me11admin/public_html/admin/razorpay/razorpay-php/src/Entity.php(59): Razorpay\Api\Request->request('POST', 'orders/', Array)
+#3 /home/me11admin/public_html/admin/razorpay/razorpay-php/src/Entity.php(15): Razorpay\Api\Entity->request('POST', 'orders/', Array)
+#4 /home/me11admin/public_html/admin/razorpay/razorpay-php/src/Order.php(12): Razorpay\Api\Entity->create(Array)
+#5 /home/me11admin/public_html/admin/razorpay/pay.php(14): Razorpay\Api\Order->create(Array)
+#6 {main}
+  thrown in /home/me11admin/public_html/admin/razorpay/razorpay-php/src/Request.php on line 123
+[30-Jan-2019 11:10:51 UTC] PHP Fatal error:  Uncaught exception 'Razorpay\Api\Errors\BadRequestError' with message 'The api key provided is invalid' in /home/me11admin/public_html/admin/razorpay/razorpay-php/src/Request.php:123
+Stack trace:
+#0 /home/me11admin/public_html/admin/razorpay/razorpay-php/src/Request.php(90): Razorpay\Api\Request->processError(Array, 401, Object(Requests_Response))
+#1 /home/me11admin/public_html/admin/razorpay/razorpay-php/src/Request.php(44): Razorpay\Api\Request->checkErrors(Object(Requests_Response))
+#2 /home/me11admin/public_html/admin/razorpay/razorpay-php/src/Entity.php(59): Razorpay\Api\Request->request('POST', 'orders/', Array)
+#3 /home/me11admin/public_html/admin/razorpay/razorpay-php/src/Entity.php(15): Razorpay\Api\Entity->request('POST', 'orders/', Array)
+#4 /home/me11admin/public_html/admin/razorpay/razorpay-php/src/Order.php(12): Razorpay\Api\Entity->create(Array)
+#5 /home/me11admin/public_html/admin/razorpay/pay.php(13): Razorpay\Api\Order->create(Array)
+#6 {main}
+  thrown in /home/me11admin/public_html/admin/razorpay/razorpay-php/src/Request.php on line 123
+[30-Jan-2019 11:28:09 UTC] PHP Fatal error:  Class 'Config' not found in /home/me11admin/public_html/admin/razorpay/checkout/manual.php on line 2
